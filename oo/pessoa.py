@@ -1,8 +1,12 @@
 class Pessoa:
-    def comprimentar(self,nome):
-        return f'Olá {nome} seu id é: {id(self)}'
+    def __init__(self,nome=None,idade=37):
+        self.nome = nome
+        self.idade = idade
+
+    def comprimentar(self):
+        return f'Olá {self.nome} sua idade  é: {self.idade}'
 
 if __name__ == '__main__':
-    pessoa = Pessoa()
-    print(pessoa.comprimentar('Dell'))
+    pessoa = Pessoa('Fulano',38)
+    print(pessoa.comprimentar())
 
