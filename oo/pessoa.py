@@ -11,6 +11,10 @@ if __name__ == '__main__':
     filho = Pessoa(nome= 'San')
     pessoa = Pessoa(filho,nome='Din')
     print(pessoa.comprimentar())
-    print(pessoa.filhos)
     for filho in pessoa.filhos:
-        print(filho.nome)
+        print(f'{pessoa.nome} é pai de {filho.nome}')
+    pessoa.sobrenome = 'Ramalho'
+    print(f'{pessoa.nome} {pessoa.sobrenome}')
+    del pessoa.filhos
+    print(pessoa.__dict__)
+    print(filho.__dict__)
