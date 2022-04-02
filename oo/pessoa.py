@@ -9,7 +9,7 @@ class Pessoa:
 
 if __name__ == '__main__':
     filho = Pessoa(nome= 'San')
-    pessoa = Pessoa(filho,nome='Fulano')
+    pessoa = Pessoa(filho,nome='Din')
     print(pessoa.comprimentar())
     print(pessoa.filhos)
     for filho in pessoa.filhos:
